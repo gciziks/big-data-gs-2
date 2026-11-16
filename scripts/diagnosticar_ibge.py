@@ -1,8 +1,4 @@
-"""Diagnóstico do IBGE: tenta várias formas de pedir a população e mostra o que funciona.
-
-Use só se o scripts/testar_fontes.py continuar falhando no IBGE:
-    python scripts/diagnosticar_ibge.py
-Depois copie a saída inteira e me mande.
+"""Diagnóstico do IBGE: tenta várias formas de pedir a população e mostra o que funciona
 """
 import sys
 
