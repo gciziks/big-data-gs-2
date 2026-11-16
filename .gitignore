@@ -1,0 +1,12 @@
+.env
+*.key
+*.pem
+secrets*
+
+# Arquivos gerados pelo Airflow (a pasta amostras/ guarda exemplos)
+chegada/*
+!chegada/.gitkeep
+airflow_data/
+__pycache__/
+*.pyc
+.venv/

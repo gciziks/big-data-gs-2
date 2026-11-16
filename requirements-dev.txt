@@ -1,0 +1,5 @@
+# Para rodar os testes (pytest tests). Para o pipeline em si basta o Docker.
+apache-airflow==3.1.6
+pyspark
+pytest
+requests

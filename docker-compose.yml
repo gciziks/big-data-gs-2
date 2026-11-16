@@ -1,0 +1,20 @@
+# Airflow 3 para rodar na sua máquina (modo "standalone": tudo em um contêiner só).
+#   Subir:     docker compose up -d
+#   Abrir:     http://localhost:8080   (sem senha, só para uso local)
+#   Parar:     docker compose stop     (use "stop", não "down", para não perder o histórico)
+#   Ver log:   docker compose logs -f airflow
+# No Linux/WSL, se der erro de permissão na pasta chegada/, rode:  chmod -R 777 chegada
+services:
+  airflow:
+    image: apache/airflow:3.1.6
+    container_name: gs_airflow
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      # Somente para uso local: entra direto como administrador, sem senha.
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "True"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./chegada:/opt/airflow/chegada
