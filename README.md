@@ -5,6 +5,8 @@ disciplina **Big Data Architecture & Data Integration**.
 
 > **Em uma frase:** avisar os moradores da Grande São Paulo quando vai chover forte no município onde moram,
 > usando dados abertos de clima e população.
+## Link da Aplicação
+https://alerta-chuva-sp.vercel.app/
 
 ## Integrantes
 
